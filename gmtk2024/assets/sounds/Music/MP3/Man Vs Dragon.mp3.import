@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://b4s0v0dd0nbmj"
+path="res://.godot/imported/Man Vs Dragon.mp3-9f41c67306b8b94f68ee59bc886b7704.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/Music/MP3/Man Vs Dragon.mp3"
+dest_files=["res://.godot/imported/Man Vs Dragon.mp3-9f41c67306b8b94f68ee59bc886b7704.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cdpkwf1j2eiqd"
+path="res://.godot/imported/Wormo Main Theme Rough.mp3-062ab00882827848d212c96dc3292ca2.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/Wormo Main Theme Rough.mp3"
+dest_files=["res://.godot/imported/Wormo Main Theme Rough.mp3-062ab00882827848d212c96dc3292ca2.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

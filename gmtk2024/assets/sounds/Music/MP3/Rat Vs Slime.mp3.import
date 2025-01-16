@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://byr474s8ndn4p"
+path="res://.godot/imported/Rat Vs Slime.mp3-ea83f8c7a149312233322a7bd54fccf7.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/Music/MP3/Rat Vs Slime.mp3"
+dest_files=["res://.godot/imported/Rat Vs Slime.mp3-ea83f8c7a149312233322a7bd54fccf7.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

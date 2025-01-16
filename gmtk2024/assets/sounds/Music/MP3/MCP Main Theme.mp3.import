@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bnumsfospkj37"
+path="res://.godot/imported/MCP Main Theme.mp3-65cf6986186e09b08cd15d6a10d44914.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/Music/MP3/MCP Main Theme.mp3"
+dest_files=["res://.godot/imported/MCP Main Theme.mp3-65cf6986186e09b08cd15d6a10d44914.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://57dkghi1trmf"]
+
+[ext_resource type="Script" path="res://scenes/game/world/start.gd" id="1_yvgo5"]
+
+[node name="Start" type="StaticBody2D"]
+script = ExtResource("1_yvgo5")
+
+[node name="SpawnPosition" type="Marker2D" parent="."]

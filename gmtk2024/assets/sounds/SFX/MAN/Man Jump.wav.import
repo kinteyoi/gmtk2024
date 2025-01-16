@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://cqx3hwdidqf80"
+path="res://.godot/imported/Man Jump.wav-9e1349974f43d775af3cf11ac48c56ce.sample"
+
+[deps]
+
+source_file="res://assets/sounds/SFX/MAN/Man Jump.wav"
+dest_files=["res://.godot/imported/Man Jump.wav-9e1349974f43d775af3cf11ac48c56ce.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0

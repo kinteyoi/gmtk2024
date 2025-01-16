@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://caexdpe2xomb1"
+path="res://.godot/imported/MAN CLIMB.mp3-81a3a423f922a8ff9a029f03ee97d947.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/Music/MP3/MAN CLIMB.mp3"
+dest_files=["res://.godot/imported/MAN CLIMB.mp3-81a3a423f922a8ff9a029f03ee97d947.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

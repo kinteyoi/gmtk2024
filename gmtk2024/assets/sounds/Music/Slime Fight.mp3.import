@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://l2exny04js2o"
+path="res://.godot/imported/Slime Fight.mp3-54e83c27b1363c1d0dc8ddf12dad9b5e.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/Music/Slime Fight.mp3"
+dest_files=["res://.godot/imported/Slime Fight.mp3-54e83c27b1363c1d0dc8ddf12dad9b5e.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

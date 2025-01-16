@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://bsx8pnmwiamho"
+path="res://.godot/imported/Wormo's Demise.mp3-1c4a0497cad419f9a037c3aa794ea775.mp3str"
+
+[deps]
+
+source_file="res://assets/sounds/Music/MP3/Wormo's Demise.mp3"
+dest_files=["res://.godot/imported/Wormo's Demise.mp3-1c4a0497cad419f9a037c3aa794ea775.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4

@@ -1,0 +1,118 @@
+[gd_scene load_steps=11 format=3 uid="uid://qrdld81cu0vn"]
+
+[ext_resource type="Script" path="res://scenes/game/characters/human/human_boss.gd" id="1_5pps5"]
+[ext_resource type="Texture2D" uid="uid://oxr5g534x3hv" path="res://assets/characters/human.png" id="2_wiav0"]
+
+[sub_resource type="Animation" id="Animation_5rwws"]
+length = 0.1
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 1,
+"values": [1]
+}
+
+[sub_resource type="Animation" id="Animation_4gsj4"]
+resource_name = "attack"
+length = 1.3
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.3, 0.4),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1),
+"update": 1,
+"values": [3, 4, 5, 6, 7]
+}
+
+[sub_resource type="Animation" id="Animation_lrbxy"]
+resource_name = "move"
+length = 0.3
+loop_mode = 1
+step = 0.1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Sprite2D:frame")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 1,
+"values": [0, 1, 2]
+}
+
+[sub_resource type="Animation" id="Animation_ad7hx"]
+resource_name = "slime_attack"
+length = 0.5
+
+[sub_resource type="Animation" id="Animation_gplum"]
+resource_name = "walk"
+step = 0.1
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_g820l"]
+_data = {
+"RESET": SubResource("Animation_5rwws"),
+"attack": SubResource("Animation_4gsj4"),
+"move": SubResource("Animation_lrbxy"),
+"slime_attack": SubResource("Animation_ad7hx"),
+"walk": SubResource("Animation_gplum")
+}
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_o25qd"]
+size = Vector2(198.5, 141.5)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ceg6a"]
+size = Vector2(48, 94)
+
+[node name="HumanBoss" type="CharacterBody2D" groups=["boss"]]
+collision_layer = 8
+collision_mask = 3
+script = ExtResource("1_5pps5")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 3
+position = Vector2(0, -63)
+scale = Vector2(2, 2)
+texture = ExtResource("2_wiav0")
+hframes = 8
+frame = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+libraries = {
+"": SubResource("AnimationLibrary_g820l")
+}
+
+[node name="SwordBox" type="Area2D" parent="."]
+position = Vector2(87.75, -44)
+collision_layer = 8
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SwordBox"]
+position = Vector2(-73, -16)
+shape = SubResource("RectangleShape2D_o25qd")
+debug_color = Color(0.897404, 0.272787, 0.415876, 0.42)
+
+[node name="HurtBox" type="CollisionShape2D" parent="."]
+position = Vector2(18, -42)
+shape = SubResource("RectangleShape2D_ceg6a")
+
+[node name="AttackTimer" type="Timer" parent="."]
+wait_time = 5.0
+one_shot = true
+
+[connection signal="animation_finished" from="AnimationPlayer" to="." method="_on_animation_player_animation_finished"]
+[connection signal="body_entered" from="SwordBox" to="." method="_on_splash_box_body_entered"]
+[connection signal="timeout" from="AttackTimer" to="." method="_on_attack_timer_timeout"]

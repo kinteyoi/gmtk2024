@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://dy5wf1s52jham"
+path="res://.godot/imported/MAN CLIMB.wav-5c3881a88ce15af03c5452e27a5a75ac.sample"
+
+[deps]
+
+source_file="res://assets/sounds/Music/WAV/MAN CLIMB.wav"
+dest_files=["res://.godot/imported/MAN CLIMB.wav-5c3881a88ce15af03c5452e27a5a75ac.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=0
